@@ -1,0 +1,114 @@
+/* Zhihu.com style Modal */
+.modal-dialog {
+	color: #787878;
+	top: 14vh;
+	-webkit-transform: translate(0,20px);
+	-ms-transform: translate(0,20px);
+	transform: translate(0,20px);
+	-webkit-transition: .3s ease-out;
+	transition: .3s ease-out;
+	width: 300px;
+}
+
+.modal-header {
+	box-sizing: initial;
+	border-bottom: 0;
+    position: relative;
+    height: 42px;
+    padding: 25px 0;
+    text-align: center;
+
+    .close {
+    	height: 16px;
+    	position: absolute;
+    	right: 10px;
+    	top: 10px;
+    	width: 16px;
+    }
+
+    h1 {
+    	font-size: 16px;
+    	margin: 0 0 10px;
+    	padding: 0;
+    }
+
+    h2 {
+    	font-size: 14px;
+    	font-weight: 400;
+    	margin: 0;
+    	padding: 0;
+    }
+}
+
+.modal-body {
+	padding: 0;
+
+	.input-wrapper {
+
+		border-bottom: 1px solid #eee;
+		position: relative;
+
+		&:first-child {
+			border-top: 1px solid #eee;
+		}
+
+		input {
+			border: 0;
+			box-sizing: border-box;
+			color: #787878;
+			font-size: 14px;
+			height: 48px;
+			line-height: 18px;
+			outline: 0;
+			padding: 15px 8px;
+			width: 100%;
+		}
+	}
+
+	.actions {
+		margin: 12px 0;
+		padding: 0 9px;
+		line-height: 30px;
+
+		.btn {
+			display: inline-block;
+			padding: 8px 16px;
+			font-size: 14px;
+			line-height: 1;
+			border: 0;
+			border-radius: 3px;
+			outline: 0;
+			cursor: pointer;
+
+			&.btn-primary {
+				float: right;
+			}
+		}
+	}
+}
+
+.btn.no-btn {
+	background-color: transparent !important;
+	border: 0 !important;
+	color: #787878;
+	display: inline-block;
+	font-size: 14px;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.modal-footer {
+	background-color: #fafafa;
+	border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+	border-top: 0;
+	padding-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+	.modal-dialog {
+		top: auto;
+		width: auto;
+	}
+}
+/* End of Zhihu.com style Modal */
